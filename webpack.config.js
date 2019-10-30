@@ -10,7 +10,13 @@ module.exports = {
     //publicPath: '/build/',
     filename: 'index.js'
   },
-
+  devServer: {
+    publicPath: "/",
+    contentBase: "./src",
+    hot: true,
+    inline: true,
+    port: 8080
+  },
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
@@ -30,7 +36,7 @@ module.exports = {
       {
         test: /\.js$/,
         //include: path.resolve(__dirname, 'src'),
-        exclude: /(node_modules|build)/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -51,14 +57,14 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg|jpeg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot|svg|jpeg|gif|png)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',
-            options: {
-              name: 'logo.jpeg',
-              outputPath: '/'
-            }
+            // options: { 
+            //   name: 'logo.jpeg',
+            //   outputPath: '/'
+            // }
           }
         ]
       }

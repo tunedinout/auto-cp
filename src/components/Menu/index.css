@@ -1,0 +1,31 @@
+.p-panelmenu{
+    width: 20%;
+    height: 85vh;
+    float: left;
+   
+}
+.p-component{
+    background-color: aliceblue;
+}
+
+/* .p-panelmenu .p-panelmenu-header > a{
+    background-color: rgb(104, 113, 238) !important;
+    color : white;
+} */
+.p-panelmenu-content{
+    
+}
+
+
+.p-panelmenu-panel{
+    border : none;
+   
+    
+    
+}
+.p-submenu-list{
+    /* background-color: blue; */
+    
+}
+
+
