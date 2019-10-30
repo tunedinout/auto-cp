@@ -1,0 +1,37 @@
+.banner{
+    
+    background-image:linear-gradient(
+      to right top,
+      rgb(45, 7, 212),rgb(58, 170, 245)
+    );
+
+    background-size: cover;
+    background-position: top;
+
+    /* add width  and height to top level, provided by props */
+    width: 100vw;
+    height: 18vh;
+    align-content: center;
+    
+    
+}
+.banner-heading-primary{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 1.5px;
+    color:white;
+}
+
+.copyright {
+    padding:0px;
+    color:white;
+    font-size: 12px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .copyright-link{
+      text-decoration: none;;
+      color: white;
+  }
