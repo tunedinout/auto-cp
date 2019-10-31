@@ -3,8 +3,10 @@ import React from 'react';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/nova-light/theme.css';
-import './index.css';
+
 import { PanelMenu } from 'primereact/panelmenu';
+import './index.css';
+
 
 
 
@@ -21,7 +23,7 @@ export default class MenuComponent extends React.Component {
                         label: 'Pending Requests',
                         icon: 'pi pi-key',
                         command: (event) => {
-                            window.location.hash = "/pending-requests";
+                            window.location.hash = "/Admin/pending-requests";
                         }
 
                     },
@@ -29,7 +31,7 @@ export default class MenuComponent extends React.Component {
                         label: 'All Users',
                         icon: 'pi pi-fw pi-users',
                         command: (event) => {
-                            window.location.hash = "/all-users";
+                            window.location.hash = "/Admin/all-users";
                         }
                     }
                 ]
@@ -42,42 +44,42 @@ export default class MenuComponent extends React.Component {
                         label: 'Create new projects',
                         icon: 'pi pi-fw pi-plus',
                         command: (event) => {
-                            window.location.hash = "/create-new-projects";
+                            window.location.hash = "/Inquiry/create-new-projects";
                         }
                     },
                     {
                         label: 'Projects assigned to me',
                         icon: 'pi pi-fw pi-align-left',
                         command: (event) => {
-                            window.location.hash = "/projects-assigned-to-me";
+                            window.location.hash = "/Inquiry/projects-assigned-to-me";
                         }
                     },
                     {
                         label: 'Projects assigned by me',
                         icon: 'pi pi-fw pi-align-right',
                         command: (event) => {
-                            window.location.hash = "/projects-assigned-by-me";
+                            window.location.hash = "/Inquiry/projects-assigned-by-me";
                         }
                     },
                     {
                         label: 'All ongoing projects',
                         icon: 'pi pi-fw pi-clone',
                         command: (event) => {
-                            window.location.hash = "/all-ongoing-projects";
+                            window.location.hash = "/Inquiry/all-ongoing-projects";
                         }
                     },
                     {
                         label: 'Closed projects',
                         icon: 'pi pi-fw pi-copy',
                         command: (event) => {
-                            window.location.hash = "/closed-projects";
+                            window.location.hash = "/Inquiry/closed-projects";
                         }
                     },
                     {
                         label: 'Archive projects',
                         icon: 'pi pi-fw pi-envelope',
                         command: (event) => {
-                            window.location.hash = "/archieve-projects";
+                            window.location.hash = "/Inquiry/archieve-projects";
                         }
                     }
 
@@ -91,7 +93,7 @@ export default class MenuComponent extends React.Component {
                         label: 'Generate new reports',
                         icon: 'pi pi-fw pi-plus',
                         command: (event) => {
-                            window.location.hash = "/generate-new-reports";
+                            window.location.hash = "/Report/generate-new-reports";
                         }
 
                     },
@@ -99,7 +101,7 @@ export default class MenuComponent extends React.Component {
                         label: 'past reports',
                         icon: 'pi pi-fw pi-minus',
                         command: (event) => {
-                            window.location.hash = "/past-reports";
+                            window.location.hash = "/Report/past-reports";
                         }
 
                     }
@@ -108,10 +110,30 @@ export default class MenuComponent extends React.Component {
             },
             {
                 label: 'Support',
-                icon: 'pi pi-fw pi-file-excel',
+                icon: 'pi  pi-info',
                 command: (event) => {
                     window.location.hash = "/support";
-                }
+                },
+                items: [
+                    {
+                        label: 'Create new Incident',
+                        icon: 'pi pi-eye',
+                        command: (event) => {
+                            window.location.hash = "/support/create-new-incident";
+                        }
+
+                    },
+                    {
+                        label: 'Open Incidents',
+                        icon: 'pi pi-circle-off',
+                        command: (event) => {
+                            window.location.hash = "/support/open-incidents";
+                        }
+
+                    }
+
+                ]
+
             }
         ]
 

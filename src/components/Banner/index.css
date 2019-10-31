@@ -2,7 +2,7 @@
     
     background-image:linear-gradient(
       to right top,
-      rgb(45, 7, 212),rgb(58, 170, 245)
+      #1341ad,#052c86
     );
 
     background-size: cover;
@@ -25,7 +25,7 @@
 
 .copyright {
     padding:0px;
-    color:white;
+    color:#858e96;
     font-size: 12px;
     margin-top: 0;
     text-align: center;

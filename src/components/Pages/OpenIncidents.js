@@ -4,10 +4,10 @@ import './index.css';
 
 
 
-export default class ProjectAssignedToMe extends React.Component {
+export default class OpenIncidents extends React.Component {
     render() {
         return (
-            <div>Support</div>
+            <div>Open incidents</div>
 
         )
     }
